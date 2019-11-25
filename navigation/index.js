@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import { createAppContainer } from 'react-native-gesture-handler'
 import Welcome from './../screens/Welcome';
@@ -28,5 +29,6 @@ const screens = createStackNavigator(
         
         }
     }
+);
 
-)
+export default createAppContainer(screens);

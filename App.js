@@ -1,10 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { AppLoading, Asset } from 'expo';
+import Navigation from './navigation';
+import * as constants from './constants';
+import { Block } from './components';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Plant App</Text>
+      <Navigation />
     </View>
   );
 }
@@ -17,3 +21,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+//25.05
